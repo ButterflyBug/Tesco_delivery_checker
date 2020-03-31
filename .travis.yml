@@ -1,0 +1,8 @@
+language: python
+python:
+  - "3.8"
+install:
+  - pipenv install --dev
+script:
+  - pipenv run python -m flake8
+  - pipenv run pytest
