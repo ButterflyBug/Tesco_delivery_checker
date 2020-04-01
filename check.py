@@ -1,5 +1,5 @@
 import requests
-from datetime import date, timedelta
+from datetime import datetime, timezone, timedelta
 import os
 from bs4 import BeautifulSoup
 from sendgrid import SendGridAPIClient
@@ -41,7 +41,7 @@ def email_address():
 
 
 def check():
-    today = date.today()
+    today = datetime.now(timezone(timedelta(hours=2)))
     second_period = today + timedelta(days=7)
     third_period = second_period + timedelta(days=7)
     periods = list(
@@ -81,7 +81,8 @@ def check():
             list_of_slots.append(slot)
 
     if len(list_of_slots) > 0:
-        send_email(email_address(), "Free slot available", "Free slots")
+        send_email(email_address(), "Free slot available", f"Free slots {len(list_of_slots)}")
+        print("Free slot available. ", len(list_of_slots))
         return True
     else:
         print("No available slots")

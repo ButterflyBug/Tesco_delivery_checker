@@ -1,6 +1,6 @@
 import pytest
 import mock
-from datetime import date
+from datetime import datetime
 from check import check
 
 
@@ -13,15 +13,15 @@ def vcr_config():
 
 
 @pytest.mark.vcr()
-@mock.patch("check.date")
+@mock.patch("check.datetime")
 def test_check_no_slots_available(mocked_date):
-    mocked_date.today.return_value = date(2020, 3, 29)
+    mocked_date.now.return_value = datetime(2020, 3, 29)
     assert not check()
 
 
 @mock.patch("check.SendGridAPIClient")
-@mock.patch("check.date")
+@mock.patch("check.datetime")
 @pytest.mark.vcr()
 def test_check_slots_available(mocked_date, mocked_sendgrid_api_client):
-    mocked_date.today.return_value = date(2020, 3, 29)
+    mocked_date.now.return_value = datetime(2020, 3, 29)
     assert check()
