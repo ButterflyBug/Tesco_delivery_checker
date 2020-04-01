@@ -66,8 +66,8 @@ def check():
         url_login,
         data={
             "onSuccessUrl": "",
-            "email": "",
-            "password": "",
+            "email": os.environ.get("TESCO_EMAIL", ""),
+            "password": os.environ.get("TESCO_PASSWORD", ""),
             "_csrf": csrf_token,
         },
         headers={"Content-Type": "application/x-www-form-urlencoded"},
