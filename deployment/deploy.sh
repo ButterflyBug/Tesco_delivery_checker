@@ -7,4 +7,4 @@ chmod 600 deployment/deployment.key
 ssh-add deployment/deployment.key
 
 git remote add dokku dokku@kate.pbuttergirl.com:tesco
-git push dokku master
+git push --force dokku master
