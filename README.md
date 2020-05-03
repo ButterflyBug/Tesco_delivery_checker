@@ -28,9 +28,9 @@ The script `run_checker.py` requires proper environmental variables to be set up
 |------------------------|-----------------------------------------------------------|---------|
 | `$ TESCO_EMAIL`        | Login to your Tesco account                               |         |
 | `$ TESCO_PASSWORD`     | Password to your Tesco account                            |         |
-| `$ WAIT_TIME`          | How often `run_checker.py` is performed in seconds        | 3600    |
+| `$ WAIT_TIME`          | How often `run_checker.py` is performed in seconds        | `3600`  |
 | `$ SENDGRID_API_KEY`   | API key to your [SendGrid](https://sendgrid.com/) account |         |
-| `$ EMAIL_NOTOFICATION` | Email address which notification should be sent on        |         |
+| `$ EMAIL_NOTIFICATION` | Email address which notification should be sent on        |         |
 
 
 ## Tests
