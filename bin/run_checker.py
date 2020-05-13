@@ -2,7 +2,7 @@ from time import sleep
 from datetime import datetime, timedelta, timezone
 import os
 import prepare_syspath  # noqa: F401
-from check import check
+from tesco_delivery_checker.check import check
 
 
 WAIT_TIME = int(os.environ.get("WAIT_TIME", "3600"))
