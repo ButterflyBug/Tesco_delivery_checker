@@ -11,21 +11,22 @@ jobs:
       script: pipenv run interrogate -vv tesco_delivery_checker
     - stage: pytest
       script: pipenv run pytest
-before_deploy:
-  - pipenv run pdoc3 --html tesco_delivery_checker/check.py
-  - mv html/check.html html/index.html
-deploy:
-  - provider: script
-    script: bash deployment/deploy.sh
-    on:
-      branch: master
-    skip_cleanup: true
-  - provider: pages
-    local_dir: html
-    skip_cleanup: true
-    github_token: $GITHUB_TOKEN
-    on:
-      branch: master
+    - stage: deployment
+      script:
+        - pipenv run pdoc3 --html tesco_delivery_checker/check.py
+        - mv html/check.html html/index.html
+      deploy:
+        - provider: script
+          script: bash deployment/deploy.sh
+          on:
+            branch: master
+          skip_cleanup: true
+        - provider: pages
+          local_dir: html
+          skip_cleanup: true
+          github_token: $GITHUB_TOKEN
+          on:
+            branch: master
 before_install:
   - openssl aes-256-cbc -K $encrypted_f50f2e55db45_key -iv $encrypted_f50f2e55db45_iv
     -in deployment/deployment.key.enc -out deployment/deployment.key -d
