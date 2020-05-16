@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/ButterflyBug/Tesco_delivery_checker.svg?branch=master)](https://travis-ci.org/ButterflyBug/Tesco_delivery_checker)
 
 - [Tesco delivery checker](#tesco-delivery-checker)
+  - [Documentation](#documentation)
   - [Development](#development)
   - [Dependencies](#dependencies)
   - [Running the script](#running-the-script)
@@ -11,6 +12,9 @@
     - [Update cassettes](#update-cassettes)
   - [Deployment](#deployment)
   - [Code style](#code-style)
+
+## Documentation
+[https://butterflybug.github.io/Tesco_delivery_checker/](https://butterflybug.github.io/Tesco_delivery_checker/)
 
 ## Development
 Recommended Python version `3.8.0`
@@ -25,7 +29,7 @@ The script `run_checker.py` requires proper environmental variables to be set up
 
 
 | Variable               | Description                                               | Default |
-|------------------------|-----------------------------------------------------------|---------|
+| ---------------------- | --------------------------------------------------------- | ------- |
 | `$ TESCO_EMAIL`        | Login to your Tesco account                               |         |
 | `$ TESCO_PASSWORD`     | Password to your Tesco account                            |         |
 | `$ WAIT_TIME`          | How often `run_checker.py` is performed in seconds        | `3600`  |
