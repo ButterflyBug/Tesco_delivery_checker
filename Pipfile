@@ -10,6 +10,7 @@ pytest = "*"
 pytest-recording = "*"
 mock = "*"
 pdoc3 = "*"
+interrogate = "*"
 
 [packages]
 requests = "*"
