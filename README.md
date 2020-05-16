@@ -14,7 +14,7 @@
   - [Code style](#code-style)
 
 ## Documentation
-[https://butterflybug.github.io/Tesco_delivery_checker/](https://butterflybug.github.io/Tesco_delivery_checker/)
+[butterflybug.github.io/Tesco_delivery_checker](https://butterflybug.github.io/Tesco_delivery_checker/)
 
 ## Development
 Recommended Python version `3.8.0`
