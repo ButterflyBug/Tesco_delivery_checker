@@ -1,4 +1,4 @@
-import pytest
+import pytest  # type: ignore
 import mock
 from datetime import datetime
 from tesco_delivery_checker.check import check

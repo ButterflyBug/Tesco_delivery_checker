@@ -7,6 +7,8 @@ jobs:
   include:
     - stage: flake8
       script: pipenv run python -m flake8
+    - stage: mypy
+      script: pipenv run find . -type f -name "*.py" ! -path "./.git/*"
     - stage: interrogate
       script: pipenv run interrogate -vv tesco_delivery_checker
     - stage: pytest
