@@ -11,6 +11,7 @@ pytest-recording = "*"
 mock = "*"
 pdoc3 = "*"
 interrogate = "*"
+mypy = "*"
 
 [packages]
 requests = "*"

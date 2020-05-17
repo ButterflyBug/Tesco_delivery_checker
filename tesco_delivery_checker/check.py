@@ -4,12 +4,13 @@
 import requests
 from datetime import datetime, timezone, timedelta
 import os
-from bs4 import BeautifulSoup
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
+from bs4 import BeautifulSoup  # type: ignore
+from sendgrid import SendGridAPIClient  # type: ignore
+from sendgrid.helpers.mail import Mail  # type: ignore
+from typing import List, Dict
 
 
-def get_slots_for_date(url, session):
+def get_slots_for_date(url: str, session: requests.Session) -> List[Dict]:
     """
     Provides with a list of available slots so that booking of groceries' delivery
     is possible on a specified day.
@@ -50,7 +51,7 @@ def get_slots_for_date(url, session):
     return slots
 
 
-def send_email(email, subject, message_body):
+def send_email(email: str, subject: str, message_body: str) -> bool:
     """
     Sends an email to address passed as first parameter.
     The message is delivered using SendGrid service. It requires API key determined
@@ -89,7 +90,7 @@ def send_email(email, subject, message_body):
     return True
 
 
-def email_address():
+def email_address() -> str:
     """
     Returns a value of the environment variable `EMAIL_NOTIFICATION`
     that indicates the email address which the notification should be sent to.
@@ -104,7 +105,7 @@ def email_address():
     return os.environ.get("EMAIL_NOTIFICATION", "")
 
 
-def check():
+def check() -> bool:
     """
     Function examines whether there is at least one available slot on Tesco's website
     and in case of success the value `True` is returned. Except for that the function `send_email()`

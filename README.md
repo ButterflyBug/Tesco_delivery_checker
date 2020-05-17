@@ -73,4 +73,8 @@ This project follows [PEP8](https://www.python.org/dev/peps/pep-0008/) style gui
 
 `$ black`
 
+Type annotation [PEP484](https://www.python.org/dev/peps/pep-0484/) with `Mypy`
+
+`$ mypy [file_path]`
+
 
