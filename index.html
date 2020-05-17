@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>check API documentation</title>
+<meta name="description" content="Tesco delivery checker …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>check</code></h1>
+</header>
+<section id="section-intro">
+<h1 id="tesco-delivery-checker">Tesco delivery checker</h1>
+<p><a href="https://travis-ci.org/ButterflyBug/Tesco_delivery_checker"><img alt="Build Status" src="https://travis-ci.org/ButterflyBug/Tesco_delivery_checker.svg?branch=master"></a></p>
+<ul>
+<li><a href="#tesco-delivery-checker">Tesco delivery checker</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#running-the-script">Running the script</a><ul>
+<li><a href="#environment-variables">Environment variables</a></li>
+</ul>
+</li>
+<li><a href="#tests">Tests</a><ul>
+<li><a href="#update-cassettes">Update cassettes</a></li>
+</ul>
+</li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#code-style">Code style</a></li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<p><a href="https://butterflybug.github.io/Tesco_delivery_checker/">butterflybug.github.io/Tesco_delivery_checker</a></p>
+<h2 id="development">Development</h2>
+<p>Recommended Python version <code>3.8.0</code></p>
+<h2 id="dependencies">Dependencies</h2>
+<p><code>$ pipenv install --dev</code></p>
+<h2 id="running-the-script">Running the script</h2>
+<p>The script <code>run_checker.py</code> requires proper environmental variables to be set up before its code is run. They are essential for that program so that it is able to successfully log into the website and obtain all needed information about available or unavailable slots.</p>
+<h3 id="environment-variables">Environment variables</h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>$ TESCO_EMAIL</code></td>
+<td>Login to your Tesco account</td>
+<td></td>
+</tr>
+<tr>
+<td><code>$ TESCO_PASSWORD</code></td>
+<td>Password to your Tesco account</td>
+<td></td>
+</tr>
+<tr>
+<td><code>$ WAIT_TIME</code></td>
+<td>How often <code>run_checker.py</code> is performed in seconds</td>
+<td><code>3600</code></td>
+</tr>
+<tr>
+<td><code>$ SENDGRID_API_KEY</code></td>
+<td>API key to your <a href="https://sendgrid.com/">SendGrid</a> account</td>
+<td></td>
+</tr>
+<tr>
+<td><code>$ EMAIL_NOTIFICATION</code></td>
+<td>Email address which notification should be sent on</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tests">Tests</h2>
+<p><code>$ pytest</code></p>
+<h3 id="update-cassettes">Update cassettes</h3>
+<p>To record a new cassette needed to run tests, that invalid one should be deleted.
+Once the file is removed, the newest version and updated content of the website can be recorded again.</p>
+<p><code>$ pytest --record-mode=all</code></p>
+<h2 id="deployment">Deployment</h2>
+<p>The whole project's deployment is prepared to be supported with <a href="http://dokku.viewdocs.io/dokku/"><code>dokku</code></a>.
+To correctly deploy the application to external server some steps need to be followed:</p>
+<ol>
+<li>Set up <code>dokku</code> on remote server.</li>
+<li>Add remote to your local repository:</li>
+</ol>
+<p><code>git remote add [remote_name] dokku@[server_address]:[application_name]</code></p>
+<p>i.e. <code>git remote add dokku@example.com:tesco</code></p>
+<ol>
+<li>Deploy with:</li>
+</ol>
+<p><code>git push [remote_name] master</code> </p>
+<ol>
+<li>Make sure that <a href="#environment-variables">environment variables</a> are set:</li>
+</ol>
+<p><code>dokku config:set [application_name] VARIABLE_NAME=VALUE</code></p>
+<h2 id="code-style">Code style</h2>
+<p>This project follows <a href="https://www.python.org/dev/peps/pep-0008/">PEP8</a> style guide.</p>
+<p><code>$ python -m flake8</code></p>
+<p><code>$ black</code></p>
+<p>Type annotation <a href="https://www.python.org/dev/peps/pep-0484/">PEP484</a> with <code>Mypy</code></p>
+<p><code>$ mypy [file_path]</code></p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;
+.. include:: ../README.md
+&#34;&#34;&#34;
+import requests
+from datetime import datetime, timezone, timedelta
+import os
+from bs4 import BeautifulSoup  # type: ignore
+from sendgrid import SendGridAPIClient  # type: ignore
+from sendgrid.helpers.mail import Mail  # type: ignore
+from typing import List, Dict
+
+
+def get_slots_for_date(url: str, session: requests.Session) -&gt; List[Dict]:
+    &#34;&#34;&#34;
+    Provides with a list of available slots so that booking of groceries&#39; delivery
+    is possible on a specified day.
+
+    Parameters
+    -----------
+    url : string
+        URL of the slot endpoint
+    session : requests.Session
+        Instance of Session class to preserve cookie between requests
+
+    Returns
+    --------
+    slots : list
+        List of available slots filtered from the list of all slots approachable on the endpoint
+
+    Examples
+    ---------
+        &gt;&gt;&gt; get_slots_for_date(
+              &#34;https://ezakupy.tesco.pl/groceries/pl-PL/slots/delivery/2020-05-13?slotGroup=2&#34;,
+              session
+            )
+    &#34;&#34;&#34;
+    response = session.get(
+        url,
+        headers={
+            &#34;Accept&#34;: &#34;application/json&#34;,
+            &#34;Content-Type&#34;: &#34;application/json&#34;,
+            &#34;Adrum&#34;: &#34;isAjax:true&#34;,
+            &#34;X-Requested-With&#34;: &#34;XMLHttpRequest&#34;,
+        },
+    )
+
+    slots = list(
+        filter(lambda item: item[&#34;status&#34;] != &#34;UnAvailable&#34;, response.json()[&#34;slots&#34;])
+    )
+
+    return slots
+
+
+def send_email(email: str, subject: str, message_body: str) -&gt; bool:
+    &#34;&#34;&#34;
+    Sends an email to address passed as first parameter.
+    The message is delivered using SendGrid service. It requires API key determined
+    under `SENDGRID_API_KEY` environment variable for successful email&#39;s delivery.
+
+    Parameters
+    ------------
+    email : string
+        Recepient&#39;s address email
+    subject : string
+        Subject of message
+    message_body : string
+        Content of message
+
+    Returns
+    -----------
+    is_delivered : Boolean
+
+    Examples
+    ---------
+    &gt;&gt;&gt; send_email(
+          &#34;notification@notify.com&#34;,
+          &#34;Free slots available&#34;,
+          &#34;Free slots&#34;
+        )
+    True
+    &#34;&#34;&#34;
+    message = Mail(
+        from_email=&#34;notifications@grocery.com&#34;,
+        to_emails=email,
+        subject=subject,
+        plain_text_content=message_body,
+    )
+    sg = SendGridAPIClient(os.environ.get(&#34;SENDGRID_API_KEY&#34;))
+    sg.send(message)
+    return True
+
+
+def email_address() -&gt; str:
+    &#34;&#34;&#34;
+    Returns a value of the environment variable `EMAIL_NOTIFICATION`
+    that indicates the email address which the notification should be sent to.
+    However, if this variable is not set,  its value will be an empty string.
+
+    Returns
+    ------------
+    string
+        Value of `EMAIL_NOTIFICATION` or `&#34;&#34;`
+    &#34;&#34;&#34;
+
+    return os.environ.get(&#34;EMAIL_NOTIFICATION&#34;, &#34;&#34;)
+
+
+def check() -&gt; bool:
+    &#34;&#34;&#34;
+    Function examines whether there is at least one available slot on Tesco&#39;s website
+    and in case of success the value `True` is returned. Except for that the function `send_email()`
+    is called so that the notification with desired information about free slots is sent.
+    If there are no available slots `False` is returned.
+
+    Returns
+    --------
+    Boolean
+        True if slots are available, otherwise False
+    &#34;&#34;&#34;
+    today = datetime.now(timezone(timedelta(hours=2)))
+    second_period = today + timedelta(days=7)
+    third_period = second_period + timedelta(days=7)
+    periods = list(
+        map(
+            lambda item: item.strftime(&#34;%Y-%m-%d&#34;), [today, second_period, third_period]
+        )
+    )
+
+    periods_urls = map(
+        lambda item: f&#34;https://ezakupy.tesco.pl/groceries/pl-PL/slots/delivery/{item}?slotGroup=2&#34;,
+        periods,
+    )
+    url_login = &#34;https://ezakupy.tesco.pl/groceries/pl-PL/login&#34;
+
+    session = requests.Session()
+
+    response_login_form = session.get(url_login)
+    soup = BeautifulSoup(response_login_form.content, features=&#34;html.parser&#34;)
+    csrf_token = soup.find(attrs={&#34;name&#34;: &#34;_csrf&#34;}).attrs[&#34;value&#34;]
+
+    session.post(
+        url_login,
+        data={
+            &#34;onSuccessUrl&#34;: &#34;&#34;,
+            &#34;email&#34;: os.environ.get(&#34;TESCO_EMAIL&#34;, &#34;&#34;),
+            &#34;password&#34;: os.environ.get(&#34;TESCO_PASSWORD&#34;, &#34;&#34;),
+            &#34;_csrf&#34;: csrf_token,
+        },
+        headers={&#34;Content-Type&#34;: &#34;application/x-www-form-urlencoded&#34;},
+    )
+
+    period_results = map(lambda url: get_slots_for_date(url, session), periods_urls)
+    list_of_slots = []
+
+    for period_result in period_results:
+        for slot in period_result:
+            list_of_slots.append(slot)
+
+    if len(list_of_slots) &gt; 0:
+        send_email(
+            email_address(), &#34;Free slot available&#34;, f&#34;Free slots {len(list_of_slots)}&#34;
+        )
+        print(&#34;Free slot available. &#34;, len(list_of_slots))
+        return True
+    else:
+        print(&#34;No available slots&#34;)
+        return False</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="check.check"><code class="name flex">
+<span>def <span class="ident">check</span></span>(<span>) -> bool</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Function examines whether there is at least one available slot on Tesco's website
+and in case of success the value <code>True</code> is returned. Except for that the function <code><a title="check.send_email" href="#check.send_email">send_email()</a></code>
+is called so that the notification with desired information about free slots is sent.
+If there are no available slots <code>False</code> is returned.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>Boolean</code></dt>
+<dd>True if slots are available, otherwise False</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def check() -&gt; bool:
+    &#34;&#34;&#34;
+    Function examines whether there is at least one available slot on Tesco&#39;s website
+    and in case of success the value `True` is returned. Except for that the function `send_email()`
+    is called so that the notification with desired information about free slots is sent.
+    If there are no available slots `False` is returned.
+
+    Returns
+    --------
+    Boolean
+        True if slots are available, otherwise False
+    &#34;&#34;&#34;
+    today = datetime.now(timezone(timedelta(hours=2)))
+    second_period = today + timedelta(days=7)
+    third_period = second_period + timedelta(days=7)
+    periods = list(
+        map(
+            lambda item: item.strftime(&#34;%Y-%m-%d&#34;), [today, second_period, third_period]
+        )
+    )
+
+    periods_urls = map(
+        lambda item: f&#34;https://ezakupy.tesco.pl/groceries/pl-PL/slots/delivery/{item}?slotGroup=2&#34;,
+        periods,
+    )
+    url_login = &#34;https://ezakupy.tesco.pl/groceries/pl-PL/login&#34;
+
+    session = requests.Session()
+
+    response_login_form = session.get(url_login)
+    soup = BeautifulSoup(response_login_form.content, features=&#34;html.parser&#34;)
+    csrf_token = soup.find(attrs={&#34;name&#34;: &#34;_csrf&#34;}).attrs[&#34;value&#34;]
+
+    session.post(
+        url_login,
+        data={
+            &#34;onSuccessUrl&#34;: &#34;&#34;,
+            &#34;email&#34;: os.environ.get(&#34;TESCO_EMAIL&#34;, &#34;&#34;),
+            &#34;password&#34;: os.environ.get(&#34;TESCO_PASSWORD&#34;, &#34;&#34;),
+            &#34;_csrf&#34;: csrf_token,
+        },
+        headers={&#34;Content-Type&#34;: &#34;application/x-www-form-urlencoded&#34;},
+    )
+
+    period_results = map(lambda url: get_slots_for_date(url, session), periods_urls)
+    list_of_slots = []
+
+    for period_result in period_results:
+        for slot in period_result:
+            list_of_slots.append(slot)
+
+    if len(list_of_slots) &gt; 0:
+        send_email(
+            email_address(), &#34;Free slot available&#34;, f&#34;Free slots {len(list_of_slots)}&#34;
+        )
+        print(&#34;Free slot available. &#34;, len(list_of_slots))
+        return True
+    else:
+        print(&#34;No available slots&#34;)
+        return False</code></pre>
+</details>
+</dd>
+<dt id="check.email_address"><code class="name flex">
+<span>def <span class="ident">email_address</span></span>(<span>) -> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns a value of the environment variable <code>EMAIL_NOTIFICATION</code>
+that indicates the email address which the notification should be sent to.
+However, if this variable is not set,
+its value will be an empty string.</p>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>string</code></dt>
+<dd>Value of <code>EMAIL_NOTIFICATION</code> or <code>""</code></dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def email_address() -&gt; str:
+    &#34;&#34;&#34;
+    Returns a value of the environment variable `EMAIL_NOTIFICATION`
+    that indicates the email address which the notification should be sent to.
+    However, if this variable is not set,  its value will be an empty string.
+
+    Returns
+    ------------
+    string
+        Value of `EMAIL_NOTIFICATION` or `&#34;&#34;`
+    &#34;&#34;&#34;
+
+    return os.environ.get(&#34;EMAIL_NOTIFICATION&#34;, &#34;&#34;)</code></pre>
+</details>
+</dd>
+<dt id="check.get_slots_for_date"><code class="name flex">
+<span>def <span class="ident">get_slots_for_date</span></span>(<span>url: str, session: requests.sessions.Session) -> List[Dict]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Provides with a list of available slots so that booking of groceries' delivery
+is possible on a specified day.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>url</code></strong> :&ensp;<code>string</code></dt>
+<dd>URL of the slot endpoint</dd>
+<dt><strong><code>session</code></strong> :&ensp;<code>requests.Session</code></dt>
+<dd>Instance of Session class to preserve cookie between requests</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>slots</code></strong> :&ensp;<code>list</code></dt>
+<dd>List of available slots filtered from the list of all slots approachable on the endpoint</dd>
+</dl>
+<h2 id="examples">Examples</h2>
+<pre><code>&gt;&gt;&gt; get_slots_for_date(
+      "https://ezakupy.tesco.pl/groceries/pl-PL/slots/delivery/2020-05-13?slotGroup=2",
+      session
+    )
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_slots_for_date(url: str, session: requests.Session) -&gt; List[Dict]:
+    &#34;&#34;&#34;
+    Provides with a list of available slots so that booking of groceries&#39; delivery
+    is possible on a specified day.
+
+    Parameters
+    -----------
+    url : string
+        URL of the slot endpoint
+    session : requests.Session
+        Instance of Session class to preserve cookie between requests
+
+    Returns
+    --------
+    slots : list
+        List of available slots filtered from the list of all slots approachable on the endpoint
+
+    Examples
+    ---------
+        &gt;&gt;&gt; get_slots_for_date(
+              &#34;https://ezakupy.tesco.pl/groceries/pl-PL/slots/delivery/2020-05-13?slotGroup=2&#34;,
+              session
+            )
+    &#34;&#34;&#34;
+    response = session.get(
+        url,
+        headers={
+            &#34;Accept&#34;: &#34;application/json&#34;,
+            &#34;Content-Type&#34;: &#34;application/json&#34;,
+            &#34;Adrum&#34;: &#34;isAjax:true&#34;,
+            &#34;X-Requested-With&#34;: &#34;XMLHttpRequest&#34;,
+        },
+    )
+
+    slots = list(
+        filter(lambda item: item[&#34;status&#34;] != &#34;UnAvailable&#34;, response.json()[&#34;slots&#34;])
+    )
+
+    return slots</code></pre>
+</details>
+</dd>
+<dt id="check.send_email"><code class="name flex">
+<span>def <span class="ident">send_email</span></span>(<span>email: str, subject: str, message_body: str) -> bool</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sends an email to address passed as first parameter.
+The message is delivered using SendGrid service. It requires API key determined
+under <code>SENDGRID_API_KEY</code> environment variable for successful email's delivery.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>email</code></strong> :&ensp;<code>string</code></dt>
+<dd>Recepient's address email</dd>
+<dt><strong><code>subject</code></strong> :&ensp;<code>string</code></dt>
+<dd>Subject of message</dd>
+<dt><strong><code>message_body</code></strong> :&ensp;<code>string</code></dt>
+<dd>Content of message</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><strong><code>is_delivered</code></strong> :&ensp;<code>Boolean</code></dt>
+<dd>&nbsp;</dd>
+</dl>
+<h2 id="examples">Examples</h2>
+<pre><code class="python">&gt;&gt;&gt; send_email(
+      &quot;notification@notify.com&quot;,
+      &quot;Free slots available&quot;,
+      &quot;Free slots&quot;
+    )
+True
+</code></pre></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def send_email(email: str, subject: str, message_body: str) -&gt; bool:
+    &#34;&#34;&#34;
+    Sends an email to address passed as first parameter.
+    The message is delivered using SendGrid service. It requires API key determined
+    under `SENDGRID_API_KEY` environment variable for successful email&#39;s delivery.
+
+    Parameters
+    ------------
+    email : string
+        Recepient&#39;s address email
+    subject : string
+        Subject of message
+    message_body : string
+        Content of message
+
+    Returns
+    -----------
+    is_delivered : Boolean
+
+    Examples
+    ---------
+    &gt;&gt;&gt; send_email(
+          &#34;notification@notify.com&#34;,
+          &#34;Free slots available&#34;,
+          &#34;Free slots&#34;
+        )
+    True
+    &#34;&#34;&#34;
+    message = Mail(
+        from_email=&#34;notifications@grocery.com&#34;,
+        to_emails=email,
+        subject=subject,
+        plain_text_content=message_body,
+    )
+    sg = SendGridAPIClient(os.environ.get(&#34;SENDGRID_API_KEY&#34;))
+    sg.send(message)
+    return True</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul>
+<li><a href="#tesco-delivery-checker">Tesco delivery checker</a><ul>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#running-the-script">Running the script</a><ul>
+<li><a href="#environment-variables">Environment variables</a></li>
+</ul>
+</li>
+<li><a href="#tests">Tests</a><ul>
+<li><a href="#update-cassettes">Update cassettes</a></li>
+</ul>
+</li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#code-style">Code style</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="check.check" href="#check.check">check</a></code></li>
+<li><code><a title="check.email_address" href="#check.email_address">email_address</a></code></li>
+<li><code><a title="check.get_slots_for_date" href="#check.get_slots_for_date">get_slots_for_date</a></code></li>
+<li><code><a title="check.send_email" href="#check.send_email">send_email</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>
